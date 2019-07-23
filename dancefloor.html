@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>Object Dance Party</title>
@@ -6,11 +6,40 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/LineDancer.js"></script>
+    <script src="src/squareDancer.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton"  data-dancer-maker-function-name="BlinkyDancer">Add a Country Dancer</a>    
+      <a href="#" class="addDancerButton"  data-dancer-maker-function-name="SquareDancer">Add a Square Dancer</a>    
+      <a href="#" class="addDancerButton"  data-dancer-maker-function-name="LineDancer">Add a Line Dancer</a>   
+    </div>
+    <script src="src/init.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Country Dance Party</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="lib/jquery.js"></script>
+    <script src="src/dancer.js"></script>
+    <script src="src/blinkyDancer.js"></script>
+    <script src="src/LineDancer.js"></script>
+    <script src="src/squareDancer.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <!-- <span class="title"><a href="#" class = "scatterButton">Scatter</a></span>   -->
+      <span class="title"><a href="#" class = "lineButton">Start Line Dancing!</a></span> 
+      <a href="#" class="addDancerButton blinker" data-dancer-maker-function-name="BlinkyDancer">Add A Dancer</a>
+      <a href="#" class="addDancerButton liner" data-dancer-maker-function-name="LineDancer">Add Line Dancer</a>  
+      <a href="#" class="addDancerButton squarer" data-dancer-maker-function-name="SquareDancer">Add a Square Dancer</a>  
+    </div>    
+
     <script src="src/init.js"></script>
   </body>
 </html>
