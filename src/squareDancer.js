@@ -9,7 +9,14 @@ SquareDancer.prototype = Object.create(Dancer.prototype);
 SquareDancer.prototype.constructor = SquareDancer;
 
 SquareDancer.prototype.step = function() {
+  var that = this;
   Dancer.prototype.step.call(this);
+  this.$node.mouseover(function(){
+      that.$node.css("opacity", "0.4");
+  });
+  this.$node.mouseout(function(){
+    that.$node.css("opacity", "1");
+  });
 };
 
 
